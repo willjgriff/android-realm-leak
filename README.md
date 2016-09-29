@@ -1,2 +1,2 @@
 # android-realm-leak
-Empty application demoing a potential memory leak when using Realm with Observables.
+To aid in finding a solution to this stackoverflow post: http://stackoverflow.com/questions/39758862/possible-realm-memory-leak-in-android-when-creating-observable-from-where-clause
