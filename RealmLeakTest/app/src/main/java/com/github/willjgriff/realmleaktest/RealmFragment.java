@@ -45,14 +45,9 @@ public class RealmFragment extends Fragment {
 	}
 
 	@Override
-	public void onPause() {
-		super.onPause();
+	public void onDestroyView() {
+		super.onDestroyView();
 		mSubscription.unsubscribe();
-	}
-
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
 		mRealm.close();
 	}
 }

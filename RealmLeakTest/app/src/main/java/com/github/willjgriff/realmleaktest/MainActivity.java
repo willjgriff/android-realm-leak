@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 			public void onClick(View view) {
 				getSupportFragmentManager()
 					.beginTransaction()
-					.add(R.id.fragment_container, new RealmFragment())
+					.replace(R.id.fragment_container, new RealmFragment())
 					.addToBackStack("REALM_FRAGMENT")
 					.commit();
 			}
